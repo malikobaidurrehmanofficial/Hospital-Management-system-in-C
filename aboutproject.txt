@@ -1,0 +1,62 @@
+Hospital Management System
+This Hospital Management System is a C-based project developed for managing the core operations of a hospital. It utilizes various data structures to handle information regarding patients, doctors, wards, medicines, and appointments. The system allows for adding, updating, deleting, searching, and generating reports for these entities, making it a comprehensive tool for hospital administration.
+
+Key Features:
+Patient Management:
+
+Add, update, delete, search, and view patient records.
+Track patient admission and discharge dates.
+Doctor Management:
+
+Add, update, delete, search, and view doctor profiles.
+Manage doctor specializations.
+Ward Management:
+
+Add, update, delete, search, and view ward information.
+Handle ward capacity management.
+Medicine Management:
+
+Add, update, delete, search, and view medicines.
+Manage availability and pricing of medicines.
+Appointment Management:
+
+Add, update, delete, search, and view appointments.
+Manage appointments by date and doctor.
+Report Generation:
+
+Generate reports based on patient admission/discharge status, doctor appointments, and medicine availability.
+Data Structures:
+Patient: Stores patient details like ID, name, gender, age, disease, assigned doctor, ward, and admission/discharge dates.
+Doctor: Manages doctor details such as ID, name, gender, and specialization.
+Ward: Handles information on hospital wards, including capacity.
+Appointment: Tracks patient appointments with doctors, including reason, date, and doctor details.
+Medicine: Stores medicine-related information such as name, price, and availability status.
+Functionalities:
+The project includes multiple functions for different tasks, categorized as follows:
+
+Menu Control:
+mainmenu()
+managedata_Menu()
+search_menu()
+report_menu()
+Patient Management:
+addPatient(), update_pt(), delete_pt(), searchpt_By_Name(), searchpt_By_Id(), print_pt()
+Doctor Management:
+addDoctor(), update_dc(), delete_dc(), searchdc_By_Id(), print_dc()
+Ward Management:
+addWard(), update_wd(), delete_wd(), searchwd_By_Id(), print_wd()
+Medicine Management:
+addMedicine(), update_md(), delete_md(), searchmd_By_Id(), print_md()
+Appointment Management:
+addAppointment(), update_ap(), delete_ap(), searchap_By_Id(), print_ap()
+Report Generation:
+pt_ad_report(), pt_dis_report(), pt_by_dc(), ap_by_dc(), ap_by_date(), md_by_as()
+Data Persistence:
+fetch_data(), feed_data() to read and write data to disk.
+Tools & Libraries Used:
+Standard C libraries: stdio.h, string.h, stdlib.h, time.h
+Additional libraries for system control: conio.h, windows.h
+Installation:
+Clone the repository.
+Compile the code using a C compiler such as GCC.
+Run the executable.
